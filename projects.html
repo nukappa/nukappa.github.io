@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Research
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+	<div class="page">
+		<div class="navigator">
+		<p>
+			<div class="my_name"> 
+			Dr. Nikos Karaiskos 
+			</div>
+			Research scientist
+		</p>
+		<hr class="style-six"/>	
+		<table class="navig_table">
+			<tr>
+				<th><div style="width: 60px"></div><a href="index.html">about</a></th>
+				<th><div style="width: 80px"></div>projects</th>
+				<th><div style="width: 77px"><a href="research.html">research</a></div></th>
+				<th><div style="width: 77px"><a href="resume.pdf">resum&eacute;</a></div></th>
+			</tr>
+		</table>
+		<hr class="style-six" />
+		<div class="main_text_wide">
+		<p>
+		</p>
+        <h2>DVEX: a 3D interactive virtual fly embryo</h2>
+        <div>
+        <a href="http://www.dvex.org"><img src="images/dvex.png" width="225px" height="165px" Style="float: left; margin-right: 15px"></a>
+        <p>For the purpose of a research project, I computationally constructed a virtual fly embryo. For each of the 6,000 cells of the embryo, its location in 3-dimensional space is provided, as well as the set of genes that the cell expresses at the given time point. As this was a classification problem, I used machine learning concepts and methods to create the virtual embryo. The end product is hosted in an <a href="http://dvex.rg">online interactive database</a> which the user can query to extract information regarding the cells clustering or to predict the spatial expression of a gene on the embryo. DVEX is coded in R and Shiny.</p>
+        </div>
+        <h2>Dropbead: analyzing single-cell sequencing data</h2>
+        <div>
+        <a href="https://github.com/nukappa/dropbead"><img src="images/heatmap.png" width="210px" height="165px" Style="float: right; margin-left: 15px"></a>
+        </div>
+        <p>I created an R package to easily analyze high-throughput single-cell sequencing data. Its creation was mainly driven by the necessity to quickly explore a new dataset by visualizing its main components and exploring the parameter space. Dropbead was my first package written in R and exposed me to R's inherent differences in defining and treating classes and objects. I ended up with using S4 classes, as it appeared more intuitive for my purposes. Nevertheless, the flexibility and beauty of ggplot have rendered R my favorite environment for performing exploratory data analysis and create visualizations. Dropbead's source code can be found in <a href="https://github.com/nukappa/dropbead">Github</a>.</p>
+
+        <h2>A text prediction application</h2>
+        <div>
+        <a href="https://nukappa.shinyapps.io/capstone_nk"><img src="images/capstone.png" width="220px" height="160px" Style="float: left; margin-right: 15px"></a>
+        <p>This project was the capstone project of the <i>Data Science Specialization</i> track, offered by the John Hopkins University through the Coursera platform. The task was to create an application that predicts the next word, given a sentence, and wrap it on a Shiny environment. This was my first exposure to NLP concepts. I used Python's libraries to find all 5-grams from the provided data and compute probabilities in order to predict the next word. I considered fall-back scenarios for the cases where no 5-grams were available. The application is hosted on the <a href="https://nukappa.shinyapps.io/capstone_nk">shinyapps server</a>.</p>
+        </div>
+    
+		<div class="footer">
+			<hr class="style-two" />
+			<p>
+				&copy; 2017 &middot; Nikos Karaiskos &middot; All Rights Reserved
+			</p>
+		</div>
+	</div>
+	</body>
+</html>
