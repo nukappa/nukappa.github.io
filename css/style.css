@@ -1,0 +1,120 @@
+body {
+	background-color: hsl(200, 30%, 93%);
+}
+
+.page {
+    font-family: 'Lato', 'Roboto', sans-serif;
+	min-width: 750px;
+	max-width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 50px 10px 10px 10px;
+}
+
+.navigator {
+	max-width: 750px;
+}
+
+.my_name {
+	font-size: 26px;
+	padding-bottom: 5px;
+}
+
+.right_column {
+	max-width: 160px;
+	float: right;
+	line-height: 1.4em;
+    font-size: 100%;
+}
+
+.my_photo {
+	float: left;
+	margin: 10px 100px 10px 0;
+}
+
+.main_text {
+	max-width: 550px;
+    float: left;
+	line-height: 1.5em;
+    font-size: 100%;
+}
+
+.main_text_wide {
+    max-width: 750px;
+    float: left;
+    line-height: 1.5em;
+}
+
+.footer {
+	float: left;
+	width: 750px;
+	padding: 10px 0 30px 0;
+	text-align: left;
+    font-size: 100%;
+}
+
+
+h1 {
+	font-weight: lighter;
+	font-weight: extended;
+	font-size: 38px;
+	text-align: left;
+}
+
+h2 {
+    font-weight: 400
+}
+
+a:link{
+	text-decoration: none;
+	color: Sienna;
+}
+a:visited{
+	color: Sienna;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a:active:{
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+td {
+	vertical-align: top;
+}
+
+tr > td {
+  padding-bottom: 0.2em;
+}
+
+table.navig_table {
+	margin-right: 450px;
+	margin-left: 0px;
+	text-align: left;	
+}
+
+ul {
+	text-align: left;
+	list-style: circle;
+}
+
+ol {
+	text-align: left;
+}
