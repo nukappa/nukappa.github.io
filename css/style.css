@@ -1,5 +1,5 @@
 body {
-	background-color: hsl(200, 30%, 93%);
+	background-color: hsla(228, 1%, 95%, 1);
 }
 
 .page {
@@ -67,10 +67,10 @@ h2 {
 
 a:link{
 	text-decoration: none;
-	color: Sienna;
+	color: hsla(220, 100%, 40%, 1);
 }
 a:visited{
-	color: Sienna;
+	color: hsla(220, 100%, 40%, 1);
 	text-decoration: none;
 }
 a:hover{
