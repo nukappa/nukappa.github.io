@@ -1,5 +1,5 @@
 body {
-	background-color: hsla(228, 1%, 95%, 1);
+	background-color: rgb(255, 255, 255);
 }
 
 .page {
@@ -36,13 +36,14 @@ body {
 	max-width: 550px;
     float: left;
 	line-height: 1.5em;
-    font-size: 100%;
+    font-size: 18px;
 }
 
 .main_text_wide {
     max-width: 750px;
     float: left;
     line-height: 1.5em;
+	font-size: 18px;
 }
 
 .footer {
@@ -62,7 +63,15 @@ h1 {
 }
 
 h2 {
-    font-weight: 400
+    font-weight: 400;
+	font-size: 22px;
+}
+
+h3 {
+    font-weight: 550;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 25px;
 }
 
 a:link{
@@ -107,7 +116,8 @@ tr > td {
 table.navig_table {
 	margin-right: 450px;
 	margin-left: 0px;
-	text-align: left;	
+	text-align: left;
+	font-size: 18px
 }
 
 ul {

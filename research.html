@@ -12,25 +12,42 @@
 		<div class="navigator">
 		<p>
 			<div class="my_name"> 
-			Dr. Nikos Karaiskos 
+			Nikos Karaiskos 
 			</div>
 			Research scientist
 		</p>
 		<hr class="style-six"/>	
 		<table class="navig_table">
 			<tr>
-				<th><div style="width: 60px"></div><a href="index.html">about</a></th>
-				<th><div style="width: 80px"></div><a href="projects.html">projects</a></th>
-				<th><div style="width: 77px">research</div></th>
-				<th><div style="width: 77px"><a href="resume.pdf">resum&eacute;</a></div></th>
+				<th><div style="width: 80px"></div><a href="index.html">About</a></th>
+				<th><div style="width: 105px">Research</div></th>
+				<th><div style="width: 130px"></div><a href="publications.html">Publications</a></th>
+				<th><div style="width: 100px"></div><a href="teaching.html">Teaching</a></th>
 			</tr>
 		</table>
 		<hr class="style-six" />
 		<div class="main_text_wide">
-		<p>
-            During the last 9 years, I have been working on many different research projects, resulting in a total of <a href="https://scholar.google.de/citations?user=6HTibvMAAAAJ&hl=de&oi=ao">15 scientific publications</a>. As I always aim to reach the core of things and apply first principles, I initially focused my research on the fundamental particles and forces of nature. Later on, moving from theoretical physics to computational biology, I found it exciting to work with single cells, the fundamental units of life.
-		</p>
-        <h2>A virtual fly embryo</h2>
+		<h2>Flexible spatial reconstruction of single-cell gene expression</h2>
+		<div>
+			<img src="images/nat_protocols.webp" width="80px" height="100px" Style="float: left; margin-right: 15px">
+			<p>novoSpaRc is a computational framework that probabilistically assigns cells 
+				to tissue locations. At the core of this framework lies a structural 
+				correspondence hypothesis, that cells in physical proximity share similar 
+				gene expression profiles. Given scRNA-seq data, novoSpaRc spatially 
+				reconstructs tissues based on this hypothesis, and optionally, by 
+				including a reference atlas of marker genes to improve reconstruction.</p>
+		</div>
+        <h2>Gene expression cartography</h2>
+		<div>
+			<img src="images/novosparc.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
+			<p> Reconstruct spatial positions with little or no prior knowledge, by searching for 
+				spatial arrangements of sequenced cells in which nearby cells have transcriptional 
+				profiles that are often more similar than cells that are farther apart. 
+				We formulate this task as a generalized optimal-transport problem for 
+				probabilistic embedding and derive an efficient iterative algorithm to solve 
+				it. </p>
+		</div>
+		<h2>The virtual fly embryo</h2>
         <div>
         <img src="images/embryos.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
         <p>The common fruitfly has many similarities with the human species. This unexpected fact has helped us to understand basic genetic principles and identify disease genes. I used single cell RNA data and machine learning algorithms to create a virtual <i>Drosophila</i> early embryo that can be queried for the expression of any given gene <a href="http://www.biorxiv.org/content/early/2017/03/17/117382">[15]</a>. I created an interactive online tool that provides the transcriptional information along the virtual embryo and can be used as a resource: <a href="http://www.dvex.org">DVEX</a>.</p>
@@ -69,13 +86,19 @@
         <h2>Boundary conditions: when theory steps towards reality</h2>
         <div>
         <img src="images/reflection.png" width="100px" Style="float: left; margin-right: 15px">
-        <p>We can solve many models in theoretical physics for a good reason: they are unrealistic. This doesn't mean that they're not useful though. We derive fruitful insights and qualitative information by studying these models. I was early on interested in finding ways to bring such models closer to nature. In spin chains, one way is to introduce boundary conditions so that the particles reflect on the edges. This means that the system is no longer infinite, so that finite size effects become important. This work resulted in two publications <a href="https://arxiv.org/abs/0907.3408">[1]</a>, <a href="https://arxiv.org/abs/1105.5042">[2]</a> and a review article <a href="https://arxiv.org/abs/0912.3350">[3]</a>.</p>
+        <p>We can solve many models in theoretical physics for a good reason: they are unrealistic. 
+			This doesn't mean that they're not useful though. We derive fruitful insights and 
+			qualitative information by studying these models. I was early on interested in finding 
+			ways to bring such models closer to nature. In spin chains, one way is to introduce 
+			boundary conditions so that the particles reflect on the edges. This means that the system 
+			is no longer infinite, so that finite size effects become important. This work resulted in 
+			two publications <a href="publications.html/#p1">[1]</a>, <a href="https://arxiv.org/abs/1105.5042">[2]</a> and a review article <a href="https://arxiv.org/abs/0912.3350">[3]</a>.</p>
         </div>
 
 		<div class="footer">
 			<hr class="style-two" />
 			<p>
-				&copy; 2017 &middot; Nikos Karaiskos &middot; All Rights Reserved
+				&copy; 2021 &middot; Nikos Karaiskos &middot; All Rights Reserved
 			</p>
 		</div>
 	</div>
