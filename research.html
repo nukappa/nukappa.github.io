@@ -32,71 +32,80 @@
 		<h2>Flexible spatial reconstruction of single-cell gene expression</h2>
 		<div>
 			<img src="images/nat_protocols.webp" width="80px" height="100px" Style="float: left; margin-right: 15px">
-			<p>novoSpaRc is a computational framework that probabilistically assigns cells 
-				to tissue locations. At the core of this framework lies a structural 
-				correspondence hypothesis, that cells in physical proximity share similar 
-				gene expression profiles. Given scRNA-seq data, novoSpaRc spatially 
-				reconstructs tissues based on this hypothesis, and optionally, by 
-				including a reference atlas of marker genes to improve reconstruction.
-				<a href="publications.html#p24">[24]</a></p>
+			<p>We published an extended protocol of novoSpaRc, expanding its 
+				compatibility and showcasing its application on two new tissues:
+				the organ of Corti and human osteosarcoma cultured cells
+				<a href="publications.html#p24">[24]</a>. We also made it to the 
+				front page of the current issue. (Illustration by 
+				<a href="https://tulsivoralia.com/">Tulsi Voralia</a>.)
+			</p>
 		</div>
 
+		<p style="margin-top: 30px"></p>
 		<h2>Gene expression cartography</h2>
 		<div>
 			<img src="images/novosparc.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-			<p> Reconstruct spatial positions with little or no prior knowledge, by searching for 
-				spatial arrangements of sequenced cells in which nearby cells have transcriptional 
-				profiles that are often more similar than cells that are further apart. 
-				We formulate this task as a generalized optimal-transport problem for 
-				probabilistic embedding and derive an efficient iterative algorithm to solve 
-				it. <a href="publications.html#p18">[18]</a></p>
+			<p> How to computationally reconstruct spatial positions with 
+				little or no prior knowledge from scRNA-seq data? We developed
+				a new method (novoSpaRc) that operates under the hypothesis that nearby
+				cells have transcriptional profiles that are often more 
+				similar than cells that are further apart 
+				<a href="publications.html#p18">[18]</a>. We applied novoSpaRc
+				to reconstruct liver lovules, intestinal epithelium, fly and 
+				zebrafish embryos and brain cerebellum sections. 
+			</p>
 		</div>
 
+		<p style="margin-top: 30px"></p>
 		<h2>FLAM-seq: full-length mRNA sequencing</h2>
 		<div>
-			<p>Although messenger RNAs are key molecules for understanding life, 
-				until now, no method has existed to determine the full-length 
-				sequence of endogenous mRNAs including their poly(A) tails. Moreover, 
-				although non-A nucleotides can be incorporated in poly(A) tails, there 
-				also exists no method to accurately sequence them. Here, we present 
-				full-length poly(A) and mRNA sequencing (FLAM-seq), a rapid and simple 
-				method for high-quality sequencing of entire mRNAs. We report a 
-				complementary DNA library preparation method coupled to single-molecule 
-				sequencing to perform FLAM-seq. Using human cell lines, brain 
-				organoids and Caenorhabditis elegans we show that FLAM-seq delivers 
+			<img src="images/flamseq.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
+			<p>We developed a new method for high-quality sequencing of entire
+				mRNAs, including their poly(A) tails
+				<a href="publications.html#p17">[17]</a>. Using human cell lines, brain 
+				organoids and <i>C. Elegans</i> we show that FLAM-seq delivers 
 				high-quality full-length mRNA sequences for thousands of different 
-				genes per sample.<a href="publications.html#p17">[17]</a></p>
+				genes per sample.</p>
 		</div>
 
+		<p style="margin-top: 30px"></p>
 		<h2>A Single-cell transcriptome atlas of the mouse glomerulus</h2>
 		<div>
 			<img src="images/glomerulus.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-			<p> Our study comprehensively characterized gene expression in individual 
-				glomerular cells and sets the stage for the dissection of glomerular 
-				function at the single-cell level in health and disease
-				<a href="publications.html#p16">[16]</a>.</p>
+			<p> Our study comprehensively characterized gene expression in 
+				individual cells of the mouse glomerulus, setting the stage 
+				for the dissection of glomerular function at the single-cell
+				 level in health and disease
+				<a href="publications.html#p16">[16]</a>. We accompany our 
+				results with an online interactive 
+				<a href="https://shiny.mdc-berlin.de/mgsca/">atlas</a>.	
+			
+			</p>
 		</div>
 
+		<p style="margin-top: 30px"></p>
 		<h2>The virtual fly embryo</h2>
         <div>
         <img src="images/embryos.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
-        <p>The common fruitfly has many similarities with the human species. This unexpected fact has 
-			helped us to understand basic genetic principles and identify disease genes. I used single 
-			cell RNA data and machine learning algorithms to create a virtual <i>Drosophila</i> early embryo 
-			that can be queried for the expression of any given 
-			gene <a href="publications.html#15">[15]</a>. 
-			I created an interactive online tool that provides the transcriptional information along the 
-			virtual embryo and can be used as a resource: <a href="http://www.dvex.org">DVEX</a>.</p>
+        <p>We used single-cell transcriptomics data and developed a novel computational
+			algorithm to reconstruct a virtual <i>Drosophila</i> early embryo that 
+			can be queried for the expression of any given gene <a href="publications.html#15">[15]</a>. 
+			We also created an interactive online database that provides the transcriptional 
+			information along the virtual embryo and can be used as 
+			a resource: <a href="http://www.dvex.org">DVEX</a>.</p>
         </div>
         
+		<p style="margin-top: 30px"></p>
         <h2>Fixing and preserving precious RNA material in single cells</h2>
         <div>
-        <img src="images/fixation.png" width="100px" height="105px" Style="float: right; margin-left: 15px">
+        <img src="images/fixation.png" width="80px" height="85px" Style="float: right; margin-left: 15px">
         <p>It is now possible to quickly obtain the RNA of thousands of single cells at low cost. 
-			As it is critical to preserve the natural cell states, we developed a cell fixation method
-			which stabilises the cells and preserves them over time 
-			<a href="publications.html#p14">[14]</a>. In close communication with the experimentalists, 
-			I performed the whole computational and statistical analysis of the data.</p>
+			As it is critical to preserve the natural cell states, we 
+			developed a cell fixation method which stabilises the cells and 
+			preserves them over time  <a href="publications.html#p14">[14]</a>. We
+			found our methanol-based fixation protocol to be compatible with 
+			across several different tissues and species.
+		</p>
         </div>
 
 		<hr class="style-two" style="margin-top: 50px; margin-bottom: 50px;"/>
@@ -104,54 +113,60 @@
         <h2>Topological quanum computer elements</h2>
         <div>
         <img src="images/anyons.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
-        <p>Functional quantum computers will be able to perform computations at ultra high speed and 
-			accuracy. A topological quantum computer is based on exotic quasi-particles called anyons, 
-			a family of which has been though experimentally detected. My research in this field focused 
-			on extracting mathematical structures that allowed us to solve the corresponding systems 
-			exactly <a href="publications.html#p10">[10]</a> 
+        <p>Functional quantum computers will be able to perform computations at 
+			ultra high speed and accuracy. A topological quantum computer is 
+			based on exotic quasi-particles called anyons, a family of which 
+			has been experimentally detected. We focused on extracting 
+			mathematical structures that allowed us to solve the corresponding 
+			systems exactly in <a href="publications.html#p10">[10]</a> 
 			and <a href="publications.html#p13">[13]</a>.</p>
         </div>
-        
+
+		<p style="margin-top: 30px"></p>
         <h2>Interacting fermions: a &middot; b = - b &middot; a</h2>
         <div style="clear: both;">
         <img src="images/fermions.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-        <p text-align: justify;>Fermions are a large class of particles which obey the			 
-			exclusion principle discovered by Pauli. Most fundamental blocks of matter are 
-			fermions, namely all quarks and leptons, such as the electron. 
-			The interactions between fermions are non-trivial, especially 
-			because of their intrinsic properties. We solved a model of a 
-			1-dimensional lattice of interacting fermions subject to boundary 
+        <p text-align: justify;>Fermions are a class of particles which obey 
+			the exclusion principle discovered by Pauli. Most fundamental 
+			blocks of matter are fermions, namely all quarks and leptons. 
+			Because of their intrinsic properties, interactions between 
+			fermions are non-trivial We solved a 1-dimensional lattice 
+			model of interacting fermions subject to boundary 
 			conditions <a href="publications.html#p8">[8]</a>. I then 
 			generalized the boundary conditions to a large unstudied family 
 			of supersymmetric models 
 			<a href="publications.html#p9">[9]</a>.</p>
         </div>
-        
-        <h2>Impurities, imperfections, defects</h2>
+
+		<p style="margin-top: 30px"></p>
+        <h2>Impurities and defects</h2>
         <div>
         <img src="images/impurity.jpg" width="100px" Style="float: left; margin-right: 15px">
-        <p>Another route to bridge the gap between theory and nature is to consider impurities. 
-			Quite often, the theoretical models are far too homogeneous to capture physical signals. 
-			Since nature is almost always not homogeneous, or perfect, these impurities are also called 
-			imperfections, or defects. I was excited to work out the consequences of introducing such 
-			impurities in diverse frameworks including sigma models 
+        <p>Impurities are another route to bridge the gap between theory and
+			 nature as theoretical models are often too homogeneous to capture 
+			 physical signals. Since nature is rarely homogeneous, these 
+			 impurities are also called defects. We worked out the consequences 
+			 of introducing such impurities in different frameworks including 
+			 sigma models 
 			<a href="publications.html#p6">[6]</a>, spin chain impurities 
 			<a href="publications.html#p7">[7]</a> and impurity generation 
 			boundaries <a href="publications.html#p11">[11]</a>, 
 			<a href="publications.html#p12">[12]</a>.</p>
         </div>
 
+		<p style="margin-top: 30px"></p>
         <h2>Life in 10 dimensions</h2>
         <div>
         <img src="images/calabi_yau.jpg" width="100px" Style="float: right; margin-left: 15px">
-        <p>String theory started as a promising attempt to unify all physical interactions and 
-			ended up being a vast compilation of mathematical theories and physical concepts. 
-			According to string theory, our world is 10-dimensional. Peculiar objects roam on those 
-			high-dimensional spaces and interact in even more peculiar manners with each other. 
-			Fascinated by the beauty of the mathematical structures, I worked on finding new ways to 
-			embed those objects on sphere submanifolds <a href="publications.html#p4">[4]</a>.</p>
+        <p>String theory started as a promising attempt to unify all physical 
+			interactions and ended up as a vast compilation of mathematical 
+			theories and physical concepts. According to string theory, the 
+			world is 10-dimensional. Higher-dimensional objects exist in these 
+			spaces and interact with each other. We worked on finding new ways
+			to embed these objects on sphere submanifolds <a href="publications.html#p4">[4]</a>.</p>
         </div>
 
+		<p style="margin-top: 30px"></p>
         <h2>Boundary conditions: when theory moves towards reality</h2>
         <div>
         <img src="images/reflection.png" width="100px" Style="float: left; margin-right: 15px">
@@ -167,7 +182,7 @@
         </div>
 
 		<div class="footer">
-			<hr class="style-two" style="margin-top: 50px; margin-bottom: 50px;"/>
+			<hr class="style-two" style="margin-top: 25px; margin-bottom: 25px;"/>
 			<p>
 				&copy; 2021 &middot; Nikos Karaiskos &middot; All Rights Reserved
 			</p>
