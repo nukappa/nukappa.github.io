@@ -28,7 +28,7 @@ body {
 }
 
 .right_column {
-	max-width: 120px;
+	max-width: 100px;
 	float: right;
 	line-height: 1.4em;
     font-size: 100%;
