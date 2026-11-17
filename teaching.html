@@ -1,107 +1,134 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<title>
-			Teaching
-		</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	</head>
-	<body>
-	<div class="page">
-		<div class="navigator">
-		<p>
-			<div class="right_column">
-				<a href="https://www.mdc-berlin.de/">
-					<img src="images/bimsb_new_logo.png" width="75px" Style="margin-right: 0px;">
-				</a>
-			</div>
-			<div class="my_name"> 
-			Nikos Karaiskos
-			</div>
-			Senior scientist
-		</p>
-		<hr class="style-six"/>	
-		<table class="navig_table">
-			<tr>
-				<th><div style="width: 80px"></div><a href="index.html">About</a></th>
-				<th><div style="width: 105px"></div><a href="research.html">Research</a></th>
-				<th><div style="width: 130px"></div><a href="publications.html">Publications</a></th>
-				<th><div style="width: 100px"></div><a href="software.html">Software</a></th>
-				<th><div style="width: 100px"></div>Teaching</th>
-				<th><div style="width: 100px"></div><a href="ip.html">IP</a></th>
-			</tr>
-		</table>
-		<hr class="style-six" />
-		<div class="main_text_wide">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching — Nikos Karaiskos</title>
+  <meta name="description" content="Mentoring, supervision and teaching by Nikos Karaiskos.">
+  <meta name="author" content="Nikos Karaiskos">
+  <!-- Apply a saved dark-mode choice before first paint (light is the default) -->
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-			<h2>
-				Mentoring & supervision 
-			</h2>
-			<div>
-				<ul>
-					<li>
-						Clara Isabel Franz Berenguer. BSc thesis: <i>"Transcriptional characterization of brain
-						development in brain organoids at single-cell resolution"</i>. Nov 2021 - May 2022.
-						With Tancredi Pentimalli. BIMSB / MDC.
-					</li>
-					<li>
-						<a href="http://www.enessenel.com/">Enes Senel</a>. PhD thesis: 
-						<i>Machine learning applications in spatial
-						transcriptomics</i>. Oct 2019 - Sep 2023. BIMSB / MDC. (From Oct 2023 → Johnson & Johnson)
-					</li>
-					<li>
-						Tancredi Pentimalli. Summer internship. <i>"Studying neurodegenerative diseases with 
-							single-cell transcriptomics"</i>. Aug/Sep 2018. With Agnieszka Rybak-Wolf.
-							BIMSB / MDC.
-					</li>
-				</ul>
-			</div>
+  <!-- ===== Header (identical on every page; update aria-current) ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Nikos Karaiskos<span>.</span></a>
+      <div class="header-actions">
+        <nav aria-label="Main">
+          <ul class="nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <!-- <li><a href="research.html">Research</a></li> -->
+          <li><a href="software.html">Software</a></li>
+          <li><a href="teaching.html" aria-current="page">Teaching</a></li>
+          <li><a href="ip.html">Patents &amp; IP</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-			<h2>Q-Teams: teaching reasearch-based courses
-			</h2>
-			<div>
-			<p style="margin-top: -10px">These courses are part of the 
-				<a href="https://bolognalab.hu-berlin.de/de/ehemalige-angebote-des-bologna.labs/projekte-des-bologna.labs-bis-2020/q-programm/q-teams">
-				Q-Teams</a> program at the Humboldt University. They are research-based courses in which
-				students form teams and use state-of-the-art tools to analyze single-cell RNA sequencing 
-				datasets and tackle research questions. Co-teaching with Tancredi Pentimalli.
-			</p>
-			<ul>
-				<li><a href="https://agnes.hu-berlin.de/lupo/rds?state=verpublish&status=init&vmfile=no&publishid=201276&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung">WiSe 22</a>. Through blood: single-cell analysis in health and disease.</li>
-				<li><a href="https://agnes.hu-berlin.de/lupo/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=189675">WiSe 21</a></a>.
-					Organoids: a new window into disease and development.</li>
-				<li><a href="https://agnes.hu-berlin.de/lupo/rds;jsessionid=EB6B92F45AF3FDD94C5046F2D341E8E6.angua_root?state=verpublish&publishContainer=lectureContainer&publishid=183341">SoSe 21</a>.
-					Immune system in breast cancer: friend or foe?	</li>
-			</ul>
-			</div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Teaching</span>
+        <h1>Mentoring &amp; teaching</h1>
+        <p class="lead">
+          Supervising students, co-teaching research-based single-cell courses at Humboldt
+          University, and tutoring physics.
+        </p>
+      </div>
+    </section>
 
-			<h2>
-				Tutoring
-			</h2>
-			<div>
-				<ul>
-					<li>
-						Tutoring for Advanced Statistical Physics MSc courses. 2013 - 2014 (two
-						semesters). Leibniz University Hannover.
-					</li>
-					<li>
-						Teaching assistance for Physics Laboratory courses (classical Mechanics
-						& electromagnetism). 2009 - 2012 (eight semesters). University of Patras.
-					</li>
-				</ul>
-			</div>
-
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Supervision</span>
+          <h2>Mentoring &amp; supervision</h2>
         </div>
+        <ol class="timeline">
+          <li>
+            <div class="when">Nov 2021 – May 2022 · BIMSB / MDC</div>
+            <h3>Clara Isabel Franz Berenguer — BSc thesis</h3>
+            <p><em>Transcriptional characterization of brain development in brain organoids at single-cell resolution.</em> With Tancredi Pentimalli.</p>
+          </li>
+          <li>
+            <div class="when">Oct 2019 – Sep 2023 · BIMSB / MDC</div>
+            <h3><a href="http://www.enessenel.com/">Enes Senel</a> — PhD thesis</h3>
+            <p><em>Machine learning applications in spatial transcriptomics.</em> From Oct 2023 at Johnson &amp; Johnson.</p>
+          </li>
+          <li>
+            <div class="when">Aug – Sep 2018 · BIMSB / MDC</div>
+            <h3>Tancredi Pentimalli — Summer internship</h3>
+            <p><em>Studying neurodegenerative diseases with single-cell transcriptomics.</em> With Agnieszka Rybak-Wolf.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-		<div class="footer">
-			<hr class="style-two" style="margin-top: 25px; margin-bottom: 25px;"/>
-			<p>
-				&copy; 2026 &middot; Nikos Karaiskos &middot; All Rights Reserved
-			</p>
-		</div>
-	</div>
-	</body>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Courses</span>
+          <h2>Q-Teams: research-based courses</h2>
+          <p class="muted">
+            Part of the <a href="https://bolognalab.hu-berlin.de/de/ehemalige-angebote-des-bologna.labs/projekte-des-bologna.labs-bis-2020/q-programm/q-teams">Q-Teams</a>
+            programme at Humboldt University. Students form teams and use state-of-the-art tools to
+            analyse single-cell RNA sequencing datasets and tackle research questions.
+            Co-taught with Tancredi Pentimalli.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <span class="tag tag--accent">WiSe 22</span>
+            <h3 style="margin-top:10px">Through blood: single-cell analysis in health and disease</h3>
+            <p><a href="https://agnes.hu-berlin.de/lupo/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;publishid=201276&amp;moduleCall=webInfo&amp;publishConfFile=webInfo&amp;publishSubDir=veranstaltung">Course page</a></p>
+          </div>
+          <div class="card">
+            <span class="tag tag--accent">WiSe 21</span>
+            <h3 style="margin-top:10px">Organoids: a new window into disease and development</h3>
+            <p><a href="https://agnes.hu-berlin.de/lupo/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;moduleCall=webInfo&amp;publishConfFile=webInfo&amp;publishSubDir=veranstaltung&amp;veranstaltung.veranstid=189675">Course page</a></p>
+          </div>
+          <div class="card">
+            <span class="tag tag--accent">SoSe 21</span>
+            <h3 style="margin-top:10px">Immune system in breast cancer: friend or foe?</h3>
+            <p><a href="https://agnes.hu-berlin.de/lupo/rds?state=verpublish&amp;publishContainer=lectureContainer&amp;publishid=183341">Course page</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Physics</span>
+          <h2>Tutoring</h2>
+        </div>
+        <ul class="list-clean">
+          <li><strong>Advanced Statistical Physics (MSc)</strong> — tutoring, 2013 – 2014 (two semesters). Leibniz University Hannover.</li>
+          <li><strong>Physics laboratory courses</strong> (classical mechanics &amp; electromagnetism) — teaching assistance, 2009 – 2012 (eight semesters). University of Patras.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Nikos Karaiskos</span>
+      <span><a href="index.html">About</a> · <a href="publications.html">Publications</a> · <a href="software.html">Software</a></span>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,225 +1,180 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<title>
-	        Research
-		</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	</head>
-	<body>
-	<div class="page">
-		<div class="navigator">
-		<p>
-			<div class="right_column">
-				<a href="https://www.mdc-berlin.de/">
-					<img src="images/bimsb_new_logo.png" width="75px" Style="margin-right: 0px;">
-				</a>
-			</div>
-			<div class="my_name"> 
-			Nikos Karaiskos 
-			</div>
-			Senior scientist
-		</p>
-		<hr class="style-six"/>	
-		<table class="navig_table">
-			<tr>
-				<th><div style="width: 80px"></div><a href="index.html">About</a></th>
-				<th><div style="width: 105px"></div>Research</th>
-				<th><div style="width: 130px"></div><a href="publications.html">Publications</a></th>
-				<th><div style="width: 100px"></div><a href="software.html">Software</a></th>
-				<th><div style="width: 100px"></div><a href="teaching.html">Teaching</a></th>
-				<th><div style="width: 100px"></div><a href="ip.html">IP</a></th>
-			</tr>
-		</table>
-		<hr class="style-six" />
-		<div class="main_text_wide">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Nikos Karaiskos</title>
+  <meta name="description" content="Research projects of Nikos Karaiskos.">
+  <meta name="author" content="Nikos Karaiskos">
+  <!-- Unlisted page: not linked from the menu and hidden from search engines.
+       To publish it, delete the robots line below and uncomment the Research link in each page header. -->
+  <meta name="robots" content="noindex">
+  <!-- Apply a saved dark-mode choice before first paint (light is the default) -->
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-			<h2>Open-ST: High-resolution spatial transcriptomics in 3D</h2>
-			<div>
-				<img src="images/lymph_node_3d.jpeg" width="95" height="120px" Style="float: left; margin-right: 15px">
-				<p style="margin-top: -10px">
-					We developed a spatial transcriptomics method which is easy to use,
-					has subcellular resolution, is cost-efficient, and scales to 3D 
-					<a href="publications.html#p27">[27]</a>, <a href="publications.html#p29">[29]</a>. Open-ST further offers integrated H&E
-					staining from the same tissue section and provides open-source software
-					to process raw sequencing data, automatically align data modalities and segment cells,
-					and align 2D sections to assemble and interactively explore 3D virtual tissue blocks. 
-				</p>
-			</div>
-	
-		<p style="margin-top: 30px"></p>
+  <!-- ===== Header (identical on every page; update aria-current) ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Nikos Karaiskos<span>.</span></a>
+      <div class="header-actions">
+        <nav aria-label="Main">
+          <ul class="nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <!-- <li><a href="research.html">Research</a></li> -->
+          <li><a href="software.html">Software</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="ip.html">Patents &amp; IP</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-			<h2>Processing, analysis & visualization of spatial transcriptomics data</h2>
-			<div>
-				<img src="images/spacemake.png" width="95" height="120px" Style="float: right; margin-left: 15px">
-				<p style="margin-top: -10px">
-					We developed a stack of tools for spatial transcriptomics datasets.
-					Optocoder <a href="publications.html#p26">[26]</a> uses machine learning to
-					decode bead locations and their barcodes in array-based methods. 
-					Spacemake <a href="publications.html#p24">[24]</a> handles any sequencing-based
-					dataset. It offers parallel processing and additional modules: sample merging, 
-					saturation analysis, integration of spatial and scRNA-seq data.
-					STIM <a href="publications.html#p32">[32]</a> borrows
-					imaging techniques to analyze and visualize large-scale spatial datasets.
-				</p>
-			</div>
-	
-		<p style="margin-top: 30px"></p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Research</span>
+        <h1>Research</h1>
+        <p class="lead">
+          Computational methods and technologies for single-cell and spatial transcriptomics —
+          and the theoretical physics that came before.
+        </p>
+      </div>
+    </section>
 
-		<h2>Flexible spatial reconstruction of single-cell gene expression</h2>
-		<div>
-			<img src="images/nat_protocols.webp" width="85px" height="106px" Style="float: left; margin-right: 15px">
-			<p style="margin-top: -10px">We published an extended protocol of novoSpaRc, expanding its 
-				compatibility and showcasing its application on two new tissues:
-				the organ of Corti and human osteosarcoma cultured cells
-				<a href="publications.html#p23">[23]</a>. We also made it to the 
-				front page of the current issue. (Illustration by 
-				<a href="https://tulsivoralia.com/">Tulsi Voralia</a>.)
-			</p>
-		</div>
-
-		<p style="margin-top: 30px"></p>
-		<h2>Gene expression cartography</h2>
-		<div>
-			<img src="images/novosparc.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-			<p style="margin-top: -10px"> How to computationally reconstruct spatial positions with 
-				little or no prior knowledge from scRNA-seq data? We developed
-				a new method (novoSpaRc) that operates under the hypothesis that nearby
-				cells have transcriptional profiles that are often more 
-				similar than cells that are further apart 
-				<a href="publications.html#p18">[18]</a>. We used novoSpaRc
-				to reconstruct liver lovules, intestinal epithelium, fly and 
-				zebrafish embryos and brain cerebellum sections. 
-			</p>
-		</div>
-
-		<p style="margin-top: 30px"></p>
-		<h2>FLAM-seq: full-length mRNA sequencing</h2>
-		<div>
-			<img src="images/flamseq.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
-			<p style="margin-top: -10px">We developed a new method for high-quality sequencing of entire
-				mRNAs, including their poly(A) tails
-				<a href="publications.html#p17">[17]</a>. Using human cell lines, brain 
-				organoids and <i>C. Elegans</i> we show that FLAM-seq delivers 
-				high-quality full-length mRNA sequences for thousands of different 
-				genes per sample.</p>
-		</div>
-
-		<p style="margin-top: 30px"></p>
-		<h2>A Single-cell transcriptome atlas of the mouse glomerulus</h2>
-		<div>
-			<img src="images/glomerulus.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-			<p style="margin-top: -10px"> Our study comprehensively characterized gene expression in 
-				individual cells of the mouse glomerulus, setting the stage 
-				for the dissection of glomerular function at the single-cell
-				 level in health and disease
-				<a href="publications.html#p16">[16]</a>. We accompany our 
-				results with an online interactive 
-				<a href="https://shiny.mdc-berlin.de/mgsca/">atlas</a>.	
-			
-			</p>
-		</div>
-
-		<p style="margin-top: 30px"></p>
-		<h2>The virtual fly embryo</h2>
-        <div>
-        <img src="images/science_fig1.jpeg" width="100px" height="100px" Style="float: left; margin-right: 15px">
-        <p style="margin-top: -10px">We used single-cell transcriptomics data and developed a novel computational
-			algorithm to reconstruct a virtual <i>Drosophila</i> early embryo that 
-			can be queried for the expression of any given gene <a href="publications.html#15">[15]</a>. 
-			We also created an interactive online database that provides the transcriptional 
-			information along the virtual embryo and can be used as 
-			a resource: <a href="http://www.dvex.org">DVEX</a>.</p>
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Computational biology</span>
+          <h2>Single-cell &amp; spatial transcriptomics</h2>
         </div>
-        
-		<p style="margin-top: 30px"></p>
-        <h2>Fixing and preserving precious RNA material in single cells</h2>
-        <div>
-        <img src="images/fixation.png" width="80px" height="85px" Style="float: right; margin-left: 15px">
-        <p style="margin-top: -10px">It is now possible to quickly obtain the RNA of thousands of single cells at low cost. 
-			As it is critical to preserve the natural cell states, we 
-			developed a cell fixation method which stabilises the cells and 
-			preserves them over time  <a href="publications.html#p14">[14]</a>. We
-			found our methanol-based fixation protocol to be compatible with 
-			across several different tissues and species.
-		</p>
+        <div class="research-list">
+          <article class="card research-item">
+            <img src="images/lymph_node_3d.jpeg" alt="Open-ST 3D lymph node reconstruction" loading="lazy">
+            <div>
+              <h3>Open-ST: high-resolution spatial transcriptomics in 3D</h3>
+              <p class="muted">A spatial transcriptomics method that is easy to use, has subcellular resolution, is cost-efficient and scales to 3D <a class="ref" href="publications.html#p27">[27]</a>, <a class="ref" href="publications.html#p29">[29]</a>. Open-ST offers integrated H&amp;E staining from the same tissue section and open-source software to process raw sequencing data, align modalities, segment cells, and assemble and interactively explore 3D virtual tissue blocks.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/spacemake.png" alt="Spacemake logo" loading="lazy">
+            <div>
+              <h3>Processing, analysis &amp; visualization of spatial transcriptomics data</h3>
+              <p class="muted">A stack of tools for spatial datasets. Optocoder <a class="ref" href="publications.html#p26">[26]</a> uses machine learning to decode bead locations and barcodes in array-based methods. <a href="software.html#spacemake">Spacemake</a> <a class="ref" href="publications.html#p24">[24]</a> handles any sequencing-based dataset, with parallel processing, sample merging, saturation analysis and integration with scRNA-seq. STIM <a class="ref" href="publications.html#p32">[32]</a> borrows imaging techniques to analyse and visualize large-scale spatial datasets.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/nat_protocols.webp" alt="Nature Protocols cover" loading="lazy">
+            <div>
+              <h3>Flexible spatial reconstruction of single-cell gene expression</h3>
+              <p class="muted">An extended protocol of novoSpaRc, expanding its compatibility and showcasing new tissues — the organ of Corti and human osteosarcoma cultured cells <a class="ref" href="publications.html#p23">[23]</a> — featured on the journal cover (illustration by <a href="https://tulsivoralia.com/">Tulsi Voralia</a>).</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/novosparc.png" alt="novoSpaRc illustration" loading="lazy">
+            <div>
+              <h3>Gene expression cartography</h3>
+              <p class="muted">How can spatial positions be reconstructed from scRNA-seq with little or no prior knowledge? <a href="software.html#novosparc">novoSpaRc</a> builds on the hypothesis that nearby cells tend to have more similar transcriptional profiles <a class="ref" href="publications.html#p18">[18]</a>. We used it to reconstruct liver lobules, intestinal epithelium, fly and zebrafish embryos and cerebellum sections.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/flamseq.png" alt="FLAM-seq illustration" loading="lazy">
+            <div>
+              <h3>FLAM-seq: full-length mRNA sequencing</h3>
+              <p class="muted">A method for high-quality sequencing of entire mRNAs, including their poly(A) tails <a class="ref" href="publications.html#p17">[17]</a>. In human cell lines, brain organoids and <i>C. elegans</i>, FLAM-seq delivers full-length sequences for thousands of genes per sample.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/glomerulus.png" alt="Mouse glomerulus" loading="lazy">
+            <div>
+              <h3>A single-cell transcriptome atlas of the mouse glomerulus</h3>
+              <p class="muted">A comprehensive characterization of gene expression in individual cells of the mouse glomerulus, setting the stage for dissecting glomerular function in health and disease <a class="ref" href="publications.html#p16">[16]</a>, with an interactive online <a href="https://shiny.mdc-berlin.de/mgsca/">atlas</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/science_fig1.jpeg" alt="Virtual Drosophila embryo" loading="lazy">
+            <div>
+              <h3>The virtual fly embryo</h3>
+              <p class="muted">Single-cell transcriptomics and a new algorithm to reconstruct a virtual <i>Drosophila</i> early embryo that can be queried for the expression of any gene <a class="ref" href="publications.html#p15">[15]</a>, with the interactive resource <a href="http://www.dvex.org">DVEX</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/fixation.png" alt="Cell fixation" loading="lazy">
+            <div>
+              <h3>Fixing and preserving precious RNA material in single cells</h3>
+              <p class="muted">A methanol-based cell fixation method that stabilises cells and preserves them over time <a class="ref" href="publications.html#p14">[14]</a>, compatible with several tissues and species.</p>
+            </div>
+          </article>
         </div>
+      </div>
+    </section>
 
-		<hr class="style-two" style="margin-top: 50px; margin-bottom: 50px;"/>
-
-        <h2>Topological quanum computer elements</h2>
-        <div>
-        <img src="images/anyons.png" width="100px" height="100px" Style="float: left; margin-right: 15px">
-        <p style="margin-top: -10px">Functional quantum computers will be able to perform computations at 
-			ultra high speed and accuracy. A topological quantum computer is 
-			based on exotic quasi-particles called anyons, a family of which 
-			has been experimentally detected. We focused on extracting 
-			mathematical structures that allowed us to solve the corresponding 
-			systems exactly in <a href="publications.html#p10">[10]</a> 
-			and <a href="publications.html#p13">[13]</a>.</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Theoretical physics</span>
+          <h2>Integrable systems &amp; string theory</h2>
         </div>
-
-		<p style="margin-top: 30px"></p>
-        <h2>Interacting fermions: a &middot; b = - b &middot; a</h2>
-        <div style="clear: both;">
-        <img src="images/fermions.png" width="100px" height="100px" Style="float: right; margin-left: 15px">
-        <p style="margin-top: -10px">Fermions are a class of particles which obey 
-			the exclusion principle discovered by Pauli. 
-			Because of their intrinsic properties, interactions between 
-			fermions are non-trivial. We solved a 1-dimensional lattice 
-			model of interacting fermions subject to boundary 
-			conditions <a href="publications.html#p8">[8]</a>. I then 
-			generalized the boundary conditions to a large unstudied family 
-			of supersymmetric models 
-			<a href="publications.html#p9">[9]</a>.</p>
+        <div class="research-list">
+          <article class="card research-item">
+            <img src="images/anyons.png" alt="Anyons" loading="lazy">
+            <div>
+              <h3>Topological quantum computer elements</h3>
+              <p class="muted">Topological quantum computers rely on exotic quasi-particles called anyons. We extracted mathematical structures that allowed us to solve the corresponding systems exactly <a class="ref" href="publications.html#p10">[10]</a>, <a class="ref" href="publications.html#p13">[13]</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/fermions.png" alt="Fermions" loading="lazy">
+            <div>
+              <h3>Interacting fermions: a · b = − b · a</h3>
+              <p class="muted">Interactions between fermions are non-trivial. We solved a 1D lattice model of interacting fermions subject to boundary conditions <a class="ref" href="publications.html#p8">[8]</a>, then generalized the boundary conditions to a large, unstudied family of supersymmetric models <a class="ref" href="publications.html#p9">[9]</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/impurity.jpg" alt="Impurity" loading="lazy">
+            <div>
+              <h3>Impurities and defects</h3>
+              <p class="muted">Impurities bridge the gap between overly homogeneous theoretical models and nature. We worked out their consequences in sigma models <a class="ref" href="publications.html#p6">[6]</a>, spin chains <a class="ref" href="publications.html#p7">[7]</a> and impurity boundaries <a class="ref" href="publications.html#p11">[11]</a>, <a class="ref" href="publications.html#p12">[12]</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/calabi_yau.jpg" alt="Calabi–Yau manifold" loading="lazy">
+            <div>
+              <h3>Life in 10 dimensions</h3>
+              <p class="muted">According to string theory the world is 10-dimensional, and higher-dimensional objects interact in these spaces. We found new ways to embed them on sphere submanifolds <a class="ref" href="publications.html#p4">[4]</a>.</p>
+            </div>
+          </article>
+          <article class="card research-item">
+            <img src="images/reflection.png" alt="Reflection" loading="lazy">
+            <div>
+              <h3>Boundary conditions: moving theory towards reality</h3>
+              <p class="muted">Introducing boundary conditions in spin chains makes systems finite, so finite-size effects matter. This work resulted in three publications <a class="ref" href="publications.html#p1">[1]</a>, <a class="ref" href="publications.html#p2">[2]</a>, <a class="ref" href="publications.html#p5">[5]</a> and a review article <a class="ref" href="publications.html#p3">[3]</a>.</p>
+            </div>
+          </article>
         </div>
+      </div>
+    </section>
+  </main>
 
-		<p style="margin-top: 30px"></p>
-        <h2>Impurities and defects</h2>
-        <div>
-        <img src="images/impurity.jpg" width="100px" Style="float: left; margin-right: 15px">
-        <p style="margin-top: -10px">Impurities are another way to bridge the gap between theory and
-			 nature, as theoretical models are often too homogeneous to capture 
-			 physical signals. We worked out the consequences 
-			 of introducing impurities in different frameworks including 
-			 sigma models 
-			<a href="publications.html#p6">[6]</a>, spin chains 
-			<a href="publications.html#p7">[7]</a> and impurity 
-			boundaries <a href="publications.html#p11">[11]</a>, 
-			<a href="publications.html#p12">[12]</a>.</p>
-        </div>
-
-		<p style="margin-top: 30px"></p>
-        <h2>Life in 10 dimensions</h2>
-        <div>
-        <img src="images/calabi_yau.jpg" width="80px" Style="float: right; margin-left: 15px">
-        <p style="margin-top: -10px">According to string theory, the 
-			world is 10-dimensional. Higher-dimensional objects exist in these 
-			spaces and interact with each other. We worked on finding new ways
-			to embed these objects on sphere submanifolds <a href="publications.html#p4">[4]</a>.</p>
-        </div>
-
-		<p style="margin-top: 30px"></p>
-        <h2>Boundary conditions: moving theory towards reality</h2>
-        <div>
-        <img src="images/reflection.png" width="100px" Style="float: left; margin-right: 15px">
-        <p style="margin-top: -10px">In spin chains, one way to bridge the gap between theory and nature
-			is to introduce boundary conditions. The system is no longer infinite 
-			and finite size effects become important. This work resulted in three publications 
-			<a href="publications.html#p1">[1]</a>, <a href="publications.html#p2">[2]</a>,
-			<a href="publications.html#p5">[5]</a> 
-			and a review article <a href="publications.html#p3">[3]</a>.</p>
-        </div>
-
-		<div class="footer">
-			<hr class="style-two" style="margin-top: 25px; margin-bottom: 25px;"/>
-			<p>
-				&copy; 2026 &middot; Nikos Karaiskos &middot; All Rights Reserved
-			</p>
-		</div>
-	</div>
-	</body>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Nikos Karaiskos</span>
+      <span><a href="index.html">About</a> · <a href="publications.html">Publications</a> · <a href="software.html">Software</a></span>
+    </div>
+  </footer>
+</body>
 </html>
